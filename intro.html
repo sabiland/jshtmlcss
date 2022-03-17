@@ -14,7 +14,24 @@
     <div>
         <span class="nice">Nice SPAN</span>
     </div>
+    <input id="btnFirst" type="button" onclick="handleButtonFirstClick();" value="Click this button" />
     <script type="text/javascript">
+        var firstButton = $('#btnFirst');
+        var countClicked = 0;
+
+        function handleButtonFirstClick() {
+            countClicked += 1;
+            firstButton.val('Clicked: ' + countClicked.toString());
+            return;
+        }
+
+
+        $(document).ready(function() {
+
+
+
+            return;
+        });
     </script>
 </body>
 
